@@ -1,4 +1,4 @@
-# Fieldwork — OSM Spatial Guard Rails Workbench
+# Fieldwork - OSM Spatial Guard Rails Workbench
 
 ### A safer preview and review workspace for OpenStreetMap editing
 
