@@ -1,0 +1,50 @@
+
+{
+  "project": {
+    "name": "Fieldwork",
+    "description": "A safer preview and review workspace for OpenStreetMap editing concepts.",
+    "mode": "prototype",
+    "liveEditing": false
+  },
+  "issues": [
+    {
+      "id": "IMG-001",
+      "type": "imagery_alignment",
+      "title": "Aerial imagery alignment",
+      "description": "The imagery preview may be offset from the mapped road geometry.",
+      "severity": "review",
+      "sampleOffset": 0
+    },
+    {
+      "id": "RD-014",
+      "type": "road_connection",
+      "title": "A road with a missing connection",
+      "description": "Two road endpoints appear to have a gap between them.",
+      "gapMeters": 14,
+      "severity": "warning",
+      "possibleActions": [
+        "snap",
+        "bridge",
+        "none"
+      ]
+    },
+    {
+      "id": "TAG-003",
+      "type": "tag_validation",
+      "title": "A questionable street name",
+      "description": "The name value appears descriptive rather than a verified street name.",
+      "tags": {
+        "name": "road near shop",
+        "highway": "residential"
+      },
+      "severity": "warning"
+    }
+  ],
+  "reviewRules": {
+    "minimumCommentLength": 15,
+    "requireAlignmentReview": true,
+    "requireRoadDecision": true,
+    "requireTagReview": true
+  }
+}
+
